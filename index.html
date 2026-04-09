@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Tutor | Career Teacher</title>
+  <meta name="description" content="Friendly, flexible professional educator services." />
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --line:#e2e8f0;
+      --accent:#1d4ed8;
+      --accent-dark:#1e40af;
+      --max:1120px;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(15,23,42,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font:16px/1.6 Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:999px;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-primary:hover{background:var(--accent-dark)}
+    .btn-secondary{border:1px solid var(--line);background:#fff}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(248,250,252,.9);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(226,232,240,.8);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      min-height:74px;gap:16px;
+    }
+    .brand{font-size:1.1rem;font-weight:800}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted)}
+    .hero{padding:72px 0 56px}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:center;
+    }
+    .hero-card,.card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .hero-copy{padding:40px}
+    h1,h2,h3{line-height:1.15;margin:0 0 14px}
+    h1{font-size:clamp(2rem,4vw,3.8rem)}
+    h2{font-size:clamp(1.6rem,3vw,2.4rem)}
+    h3{font-size:1.1rem}
+    p{margin:0 0 16px;color:var(--muted)}
+    .hero-points{display:grid;gap:10px;margin:24px 0}
+    .hero-points div{background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a8a;padding:10px 14px;border-radius:12px}
+    .hero-side{padding:20px}
+    .quick-box{padding:24px}
+    .quick-box ul{margin:0;padding-left:18px;color:var(--muted)}
+    section{padding:30px 0}
+    .services-grid,.steps-grid,.reviews-grid{
+      display:grid;gap:20px;
+      grid-template-columns:repeat(3,1fr);
+    }
+    .card{padding:24px}
+    .icon{
+      width:46px;height:46px;border-radius:12px;
+      display:grid;place-items:center;
+      background:#dbeafe;color:var(--accent);font-weight:800;margin-bottom:14px;
+    }
+    .band{padding:54px 0}
+    .band-inner{
+      background:linear-gradient(135deg,#1d4ed8,#2563eb);
+      color:#fff;border-radius:28px;padding:36px;
+      box-shadow:var(--shadow);
+    }
+    .band-inner p{color:rgba(255,255,255,.9)}
+    .about-grid,.contact-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:24px;
+    }
+    .list{display:grid;gap:10px;padding:0;margin:0;list-style:none}
+    .list li{padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:12px}
+    .contact-card{padding:28px}
+    .contact-lines{display:grid;gap:10px;margin:18px 0 22px}
+    footer{padding:28px 0 40px;color:var(--muted)}
+    .small{font-size:.95rem}
+    @media (max-width:900px){
+      .hero-grid,.about-grid,.contact-grid,
+      .services-grid,.steps-grid,.reviews-grid{grid-template-columns:1fr}
+      .nav{align-items:flex-start;padding:14px 0}
+      .nav-links{font-size:.95rem}
+      .hero-copy{padding:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="brand">Hornsby Tutor</a>
+      <nav class="nav-links">
+        <a href="#services">Tuition</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-card hero-copy">
+          <p><strong>Professional Tuition</strong></p>
+          <h1>Individualised Education Services in Hornsby</h1>
+          <p>
+            Tuition services for Primary and High School Students. Individual and group sessions available in the Hornsby Area.
+          </p>
+          <div class="hero-points">
+            <div>Fast response for local clients</div>
+            <div>Friendly, reliable, and professional service</div>
+            <div>Clear quotes with no confusion</div>
+          </div>
+          <a class="btn btn-primary" href="#contact">Get a Quote</a>
+          <a class="btn btn-secondary" href="tel:0400000000">Call 0400 000 000</a>
+        </div>
+
+        <div class="hero-card hero-side">
+          <div class="quick-box">
+            <h3>Why local customers choose us</h3>
+            <ul>
+              <li>Servicing your local suburbs</li>
+              <li>Flexible bookings</li>
+              <li> work</li>
+              <li>Honest communication</li>
+              <li>Strong focus on quality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <p>Swap these cards for your real services. Keep each one short and benefit-focused.</p>
+        <div class="services-grid">
+          <article class="card">
+            <div class="icon">1</div>
+            <h3>Service One</h3>
+            <p>Individual Tuition - in person or online.</p>
+          </article>
+          <article class="card">
+            <div class="icon">2</div>
+            <h3>Service Two</h3>
+            <p>Small class Tuition - small groups at a similar level</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="band-inner">
+          <h2>Simple process. Local focus. Real results.</h2>
+          <p>Individualised Tuition with different payment options</p>
+          <a class="btn btn-secondary" href="#contact">Book an Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>How it works</h2>
+        <div class="steps-grid">
+          <article class="card">
+            <div class="icon">A</div>
+            <h3>Contact Us</h3>
+            <p>Phone, text, or email with what you need done.</p>
+          </article>
+          <article class="card">
+            <div class="icon">B</div>
+            <h3>Get a Quote</h3>
+            <p>We discuss the job and provide clear pricing.</p>
+          </article>
+          <article class="card">
+            <div class="icon">C</div>
+            <h3>Job Completed</h3>
+            <p>We carry out the work professionally and on time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <div>
+          <h2>About</h2>
+          <p>
+            Add a plain-English summary of your experience, your values, and the kind of
+            customers you work with. This is where you build trust.
+          </p>
+          <p>
+            Mention your local area, years of experience, and anything that makes your service
+            feel dependable and easy to work with.
+          </p>
+        </div>
+        <div>
+          <ul class="list">
+            <li>Locally based and easy to reach</li>
+            <li>Clear, respectful communication</li>
+            <li>Quality workmanship and attention to detail</li>
+            <li>Helpful support before and after the job</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <h2>Reviews</h2>
+        <div class="reviews-grid">
+          <article class="card">
+            <p>“Great service, easy to deal with, and very professional from start to finish.”</p>
+            <p><strong>— Customer Name</strong></p>
+          </article>
+          <article class="card">
+            <p>“Turned up on time, explained everything clearly, and did a great job.”</p>
+            <p><strong>— Customer Name</strong></p>
+          </article>
+          <article class="card">
+            <p>“Would definitely recommend to others in the area.”</p>
+            <p><strong>— Customer Name</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="card contact-card">
+          <h2>Contact</h2>
+          <p>Replace these details with your real contact info.</p>
+          <div class="contact-lines">
+            <div><strong>Phone:</strong> <a href="tel:0400000000">0400 000 000</a></div>
+            <div><strong>Email:</strong> <a href="mailto:hello@yourbusiness.com.au">hello@yourbusiness.com.au</a></div>
+            <div><strong>Area:</strong> Your suburb and surrounding areas</div>
+            <div><strong>Hours:</strong> Mon–Sat, 8:00am–6:00pm</div>
+          </div>
+          <a class="btn btn-primary" href="mailto:hello@yourbusiness.com.au">Email Now</a>
+        </div>
+
+        <div class="card contact-card">
+          <h2>What to put on this page</h2>
+          <ul class="list small">
+            <li>Your business name and one clear headline</li>
+            <li>Your main services in simple language</li>
+            <li>Your service area and contact details</li>
+            <li>Photos of your work or before/after examples</li>
+            <li>Real reviews from local customers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap small">
+      © 2026 YOUR BUSINESS NAME. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
